@@ -283,17 +283,18 @@
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label class="form-label">Имя / организация</label>
-                <input class="form-input" type="text" placeholder="НПП «Пример», отдел покрытий" />
+                <input class="form-input" type="text"  name="name" placeholder="НПП «Пример», отдел покрытий" required />
               </div>
               <div>
                 <label class="form-label">E-mail</label>
-                <input class="form-input" type="email" placeholder="you@example.com" />
+                <input class="form-input"  name="email" type="email" placeholder="you@example.com" required />
               </div>
             </div>
             <div class="mt-4">
               <label class="form-label">Комментарий</label>
-              <textarea class="form-input h-28" placeholder="Кратко опишите задачу, тип покрытий и оборудование, с которым вы работаете."></textarea>
+              <textarea class="form-input h-28" name="message" placeholder="Кратко опишите задачу, тип покрытий и оборудование, с которым вы работаете."></textarea>
             </div>
+            <input type="hidden" name="_subject" value="Новый запрос с сайта KiaSys" />
             <button type="submit" class="btn-primary mt-5 w-full sm:w-auto">
               Отправить запрос
             </button>
