@@ -17,28 +17,38 @@
 <body class="bg-slate-950 text-slate-50">
   <!-- Шапка -->
   <header class="glass-header">
-    <div class="flex items-center gap-3">
-      <div class="logo-circle">
-        <span class="logo-letter">K</span>
-      </div>
-      <div>
-        <div class="font-semibold tracking-wide text-slate-50">Киасис</div>
-        <div class="text-xs text-slate-300">Интеллектуальный анализ и поддержка решений</div>
-      </div>
+  <div class="flex items-center gap-3">
+    <div class="logo-circle">
+      <span class="logo-letter">K</span>
+    </div>
+    <div>
+      <div class="font-semibold tracking-wide text-slate-50">Киасис</div>
+      <div class="text-xs text-slate-300">Интеллектуальный анализ и поддержка решений</div>
+    </div>
+  </div>
+
+  <nav class="hidden md:flex items-center gap-6 text-sm">
+    <a href="#hero" class="nav-link">Главная</a>
+    <a href="#for-whom" class="nav-link">Для кого</a>
+    <a href="#features" class="nav-link">Возможности</a>
+    <a href="#workflow" class="nav-link">Как работает</a>
+    <a href="#contacts" class="nav-link">Контакты</a>
+  </nav>
+
+  <div class="flex items-center gap-3">
+    <!-- Переключатель языка -->
+    <div class="lang-switcher hidden sm:flex items-center gap-1 text-xs">
+      <a href="index.ru.html" class="lang-pill lang-pill-active">RU</a>
+      <span class="text-slate-400/80">/</span>
+      <a href="index.en.html" class="lang-pill">EN</a>
     </div>
 
-    <nav class="hidden md:flex items-center gap-6 text-sm">
-      <a href="#hero" class="nav-link">Главная</a>
-      <a href="#for-whom" class="nav-link">Для кого</a>
-      <a href="#features" class="nav-link">Возможности</a>
-      <a href="#workflow" class="nav-link">Как работает</a>
-      <a href="#contacts" class="nav-link">Контакты</a>
-    </nav>
-
     <a href="#contacts" class="hidden md:inline-flex px-3 py-1.5 text-xs rounded-full border border-violet-400/80 bg-violet-500/10 hover:bg-violet-500/20 transition">
-      Получить презентацию
+      Связаться с нами
     </a>
-  </header>
+  </div>
+</header>
+
 
   <main class="relative overflow-hidden">
     <!-- Фоновая сетка/градиент -->
